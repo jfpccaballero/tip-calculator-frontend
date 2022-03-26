@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* { font-family: "Space Mono", monospace;}
+body, html { height: 100%; }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+}
+button, input { 
+    border-radius: 5px; 
+    border: none;
+    width: 100%; 
+    box-sizing: border-box;
+    height: 2.5rem;
+    font-size: 24px;
+}
+button:hover, input:hover { cursor: pointer; }
+input { 
+    background-color: hsl(189, 41%, 97%); 
+    text-align: right; 
+    color: hsl(183, 100%, 15%);
+    caret-color: hsl(172, 67%, 45%);
+    padding: 0.5rem;
+}
+input:focus { outline: 2px solid hsl(172, 67%, 45%); }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] { -moz-appearance: textfield; }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.bill { padding: 0 2rem 0.5rem 0.5rem; position: relative; }
+.bill img { position: absolute; left: 1.25rem; }
+.bill p, span { color: hsl(186, 14%, 43%); }
+.bill p { margin-bottom: 0.5rem; }
+.bill-amount { margin-bottom: 1rem; }
+.calculator {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 47rem;
+}
+.icon-dollar { top: 3.70rem; }
+.icon-person { bottom: 1.45rem; }
+.logo {
+    margin: 0 auto 10%;
+    display: flex;
+}
+.percentage {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    margin: 1rem 0 2rem;
+}
+.percentage button { color: #fff; }
+.percentage button:focus, .reset {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.percentage button:hover, .reset:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.percentage button, .tip { background-color: hsl(183, 100%, 15%); }
+.reset { 
+    text-transform: uppercase;
+    margin-top: 6.5rem;
+}
+.result { 
+    color: hsl(172, 67%, 45%); 
+    font-size: 40px;
+    margin: 0;
+    text-align: right;
+}
+.tip {
+    border-radius: 15px;
+    padding: 2rem;
+}
+.tip p { color: #fff; }
+.total {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.warning:focus {outline: 2px solid orangered;}
+.warning-msg {
+    color: orangered;
+    position: absolute;
+    right: 2rem;
+    bottom: 3.75rem;
+}
+
+@media screen and ( max-width: 820px ) {
+    body, html { height: auto; }
+    body { margin: 5% 0; }
+    button, input { font-size: 18px; }
+    .bill { padding: 0 0 2rem ; }
+    .calculator {
+        grid-template-columns: auto;
+        width: 22rem;
+    }
+    .icon-person { bottom: 2.75rem; }
+    .percentage { grid-template-columns: 48.5% 48.5%; }
+    .reset { margin-top: 2rem; }
+    .warning-msg {
+        right: 0;
+        bottom: 5rem;
+    }
+}
