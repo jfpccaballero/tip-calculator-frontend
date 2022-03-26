@@ -45,6 +45,7 @@ input[type=number] { -moz-appearance: textfield; }
     border-radius: 20px;
     width: 47rem;
 }
+.custom { text-align: center; }
 .icon-dollar { top: 3.70rem; }
 .icon-person { bottom: 1.45rem; }
 .logo {

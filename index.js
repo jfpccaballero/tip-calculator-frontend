@@ -35,6 +35,7 @@ percentages.forEach ( percentage => {
 });
 
 reset.onclick = () => {
+    message.style.display = "none";
     people.value = "";
     bill.value = "";
     custom.value = "";
